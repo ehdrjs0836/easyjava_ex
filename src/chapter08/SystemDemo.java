@@ -1,5 +1,8 @@
 package chapter08;
 
+/**
+ * 시스템 테스트
+ */
 public class SystemDemo {
   public static void main(String[] args) {
     int[] numbers = new int[1000];
