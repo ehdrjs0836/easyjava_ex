@@ -1,5 +1,8 @@
 package chapter08;
 
+/**
+ * Stringbuilder 테스트
+ */
 public class StringbuilderDemo {
   public static void main(String[] args) {
 //    String s = new String("hi");

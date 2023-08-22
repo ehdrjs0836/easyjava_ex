@@ -1,5 +1,8 @@
 package chapter08;
 
+/**
+ * equals 테스트
+ */
 public class ObjectMethodDemo {
   public static void main(String[] args) {
     Mouse mouse1 = new Mouse("삼성");
