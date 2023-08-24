@@ -8,6 +8,7 @@ public class GenericClass1Demo {
     arrayListBoricha.add(new Boricha());
     ArrayList<Beer> arrayListBeer = new ArrayList<>();
     arrayListBeer.add(new Beer());
+
     Cup c = new Cup();
     c.setBeverage(new Boricha());
     if (c.getBeverage() instanceof Boricha) {
@@ -31,8 +32,16 @@ public class GenericClass1Demo {
 }
 
 class Beverage { }
-class Boricha extends Beverage { }
-class Beer extends Beverage { }
+class Boricha extends Beverage { 
+  void drink() {
+    System.out.println("어린아이만 마실수 있다.");
+  }
+}
+class Beer extends Beverage {
+  void cheers() {
+    System.out.println("어른만 마실수 있다.");
+  }
+}
 
 //class Cup {
 //  private Object beverage;

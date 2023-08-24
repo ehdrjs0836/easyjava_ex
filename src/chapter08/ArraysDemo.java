@@ -1,6 +1,8 @@
+package chapter08;
+
 import java.util.Arrays;
 
-public class ArrayDemo {
+public class ArraysDemo {
   public static void main(String[] args) {
     char[] c1 = {'j','a','v','a'};
     char[] c2 = Arrays.copyOf(c1, c1.length);
