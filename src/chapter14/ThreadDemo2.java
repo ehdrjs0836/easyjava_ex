@@ -1,0 +1,35 @@
+package chapter14;
+
+public class ThreadDemo2 {
+  public static void main(String[] args) {
+//    new Thread(new MyRunnable() {
+//      @Override
+//      public void run() {
+//        for (int i = 0; i < 5; i++) {
+//          System.out.println("안녕");
+//          try {
+//            Thread.sleep(500);
+//          } catch (InterruptedException e) {
+//          }
+//        }
+//      }
+//    }).start(); //병렬처리
+    new Thread(() -> {
+        for (int i = 0; i < 5; i++) {
+          System.out.println("안녕");
+          try {
+            Thread.sleep(500);
+          } catch (InterruptedException e) {
+          }
+        }
+    }).start();
+    for (int i = 0; i < 5; i++) {
+      System.out.println("메인입니다");
+      try {
+        Thread.sleep(500);
+      } catch (InterruptedException e) {
+      }
+    }
+  }
+}
+
