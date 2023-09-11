@@ -1,9 +1,6 @@
 package chapter18;
 
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DBDemo1 {
   public static void main(String[] args) {
